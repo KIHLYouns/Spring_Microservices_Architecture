@@ -17,7 +17,7 @@
         <module>customer-service</module>
         <module>inventory-service</module>
         <module>gateway</module>
-		<module>config-service</module>
+		<module>config-server</module>
         <module>billing-service</module>
     </modules>
     <name>microservices</name>
