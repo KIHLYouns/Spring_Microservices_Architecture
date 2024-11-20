@@ -3,7 +3,11 @@ package com.micro.billing_service.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
 import com.micro.billing_service.entity.Billing;
 import com.micro.billing_service.service.BillingService;
 
@@ -12,9 +16,7 @@ import com.micro.billing_service.service.BillingService;
 public class BillingController {
 
     @Autowired
-    private BillingService billingService;
-
-    @Autowired
+    private final BillingService billingService;
     public BillingController(BillingService billingService) {
         this.billingService = billingService;
     }
